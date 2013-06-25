@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Messaging.IronMQ", "ServiceStack.Messaging.IronMQ\ServiceStack.Messaging.IronMQ.csproj", "{850C76BC-FAAE-461E-B10F-004D3E50B19D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Messaging.IronMQ.Tests", "ServiceStack.Messaging.IronMQ.Tests\ServiceStack.Messaging.IronMQ.Tests.csproj", "{DD63BA89-024F-4185-A36E-97FAB61EEE29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMQ.Client", "IronMQ.Client\IronMQ.Client.csproj", "{4D7A91C3-EF6E-456D-8907-CD00BD9E7BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMQ.Client.Tests", "IronMQ.Client.Tests\IronMQ.Client.Tests.csproj", "{DFE5074C-308A-4908-8053-2CF811438D74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{850C76BC-FAAE-461E-B10F-004D3E50B19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{850C76BC-FAAE-461E-B10F-004D3E50B19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{850C76BC-FAAE-461E-B10F-004D3E50B19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD63BA89-024F-4185-A36E-97FAB61EEE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD63BA89-024F-4185-A36E-97FAB61EEE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD63BA89-024F-4185-A36E-97FAB61EEE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD63BA89-024F-4185-A36E-97FAB61EEE29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7A91C3-EF6E-456D-8907-CD00BD9E7BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7A91C3-EF6E-456D-8907-CD00BD9E7BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7A91C3-EF6E-456D-8907-CD00BD9E7BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7A91C3-EF6E-456D-8907-CD00BD9E7BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE5074C-308A-4908-8053-2CF811438D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE5074C-308A-4908-8053-2CF811438D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE5074C-308A-4908-8053-2CF811438D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE5074C-308A-4908-8053-2CF811438D74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

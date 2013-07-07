@@ -37,6 +37,19 @@ namespace ServiceStack.Messaging.IronMQ.IronClient
         /// <param name="baseUrl">The base URL. Valid base urls can be found at: http://dev.iron.io/mq/reference/api/#base_url</param>
         public void Configure(string authToken, string projectId, string baseUrl)
         {
+            if (string.IsNullOrWhiteSpace(authToken))
+            {
+                throw new ArgumentNullException("authToken", "AuthToken is null");
+            }
+            if (string.IsNullOrWhiteSpace(projectId))
+            {
+                throw new ArgumentNullException("projectId", "ProjectId is null");
+            }
+            if (string.IsNullOrWhiteSpace(baseUrl))
+            {
+                throw new ArgumentNullException("baseUrl", "BaseUrl is null");
+            }
+
             AuthToken = authToken;
             ProjectId = projectId;
             BaseUrl = baseUrl;

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RestSharp;
 
 namespace ServiceStack.Messaging.IronMQ.IronClient
 {
@@ -53,6 +55,45 @@ namespace ServiceStack.Messaging.IronMQ.IronClient
             AuthToken = authToken;
             ProjectId = projectId;
             BaseUrl = baseUrl;
+        }
+
+        /// <summary>
+        /// Enqueues the specified element in the queue.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="element">The element.</param>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public void Enqueue<T>(T element)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Dequeues an message of type T from the queue.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        public T Dequeue<T>()
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+        /// <summary>
+        /// Executes the specified request.
+        /// </summary>
+        /// <remarks>
+        /// Common gateway method responsible for setting auth headers, correct URL and so forth.
+        /// </remarks>
+        /// <typeparam name="T">The element that is either being sent or fetched from the queues</typeparam>
+        /// <param name="request">The request.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NotImplementedException"></exception>
+        private T Execute<T>(RestRequest request)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
